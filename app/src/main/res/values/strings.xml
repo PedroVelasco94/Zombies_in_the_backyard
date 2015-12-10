@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Zombies in the backyard</string>
+    <string name="buttonMenuP">Start</string>
+    <string name="buttonNextRound">Next Round</string>
+    <string name="btnGameOver">Restart</string>
+    <string name="lblGameOver">Game over</string>
+    <string name="btnbarric">Go</string>
+    <string name="buttonmenuhtp">How to play</string>
+    <string name="lblhowto">How to play</string>
+
+    <string name="buttonhowtoreturn">Back</string>
+    <string name="howto1">You have four action points to distribute among the different tasks ( Kill zombies , strengthen the protection of the house and fix the car escape ) . Each action point is a single dice roll , each task need a given number to win a point in it. </string>
+    <string name="howto2">Killing zombies : \n You need to get a value on the die than or equal to three to win a point in it. Each point equals a zombie earned less. if it survives any subtracted after this life stage to the barricade of the house. </string>
+    <string name="howto3">Strengthen the protection of the house : \n For this task you also need a value three or higher on the roll to get a point . Each point scored in this task is a point more protection ne barricade the house with a maximum of up to ten points.</string>
+    <string name="howto4">Getaway car repair : \n Consigue greater or equal to 5 numbers on the roll of the dice to get a 10% compensation for each exceeded spin.</string>
+    <string name="howto5">You need to repair up to 100% in order to escape in the car.</string>
+
+
+
+
+
+
+</resources>

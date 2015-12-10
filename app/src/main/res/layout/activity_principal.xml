@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pedrovelasco.zombiesinthebackyard.principal"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/countZ"
+        android:layout_marginTop="43dp"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        android:id="@+id/radioGroupZ"
+        android:layout_below="@+id/countZ"
+        android:layout_alignParentStart="true">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/rbZ4"
+            android:checked="false"
+            android:layout_below="@+id/countZ"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/rbZ3"
+        android:layout_alignTop="@+id/rbZ4"
+        android:layout_toEndOf="@+id/rbZ4"
+        android:layout_marginStart="34dp"
+            android:layout_margin="0dp"
+            android:layout_marginLeft="0dp" />
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/rbZ2"
+        android:layout_alignTop="@+id/rbZ3"
+        android:layout_centerHorizontal="true" />
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/rbZ1"
+        android:layout_alignTop="@+id/rbZ2"
+        android:layout_toStartOf="@+id/countZ" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/rbZ0"
+            android:layout_alignTop="@+id/rbZ1"
+            android:layout_alignParentEnd="true"
+            android:checked="true" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00"
+        android:id="@+id/countB"
+        android:textSize="40dp"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/radioGroupZ"
+        android:layout_alignParentEnd="true" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroupB"
+        android:layout_below="@+id/countB"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/rbB4"
+            android:checked="false"
+            android:layout_below="@+id/countZ"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/rbB3"
+            android:layout_alignTop="@+id/rbB4"
+            android:layout_toEndOf="@+id/rbB4"
+            android:layout_marginStart="34dp"
+            android:layout_margin="0dp"
+            android:layout_marginLeft="0dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/rbB2"
+            android:layout_alignTop="@+id/rbB3"
+            android:layout_centerHorizontal="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/rbB1"
+            android:layout_alignTop="@+id/rbB2"
+            android:layout_toStartOf="@+id/countZ" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/rbB0"
+            android:layout_alignTop="@+id/rbB1"
+            android:layout_alignParentEnd="true"
+            android:checked="true" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/countC"
+        android:textSize="40dp"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/radioGroupB"
+        android:layout_alignParentEnd="true" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroupC"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/countC"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/rbC4"
+            android:checked="false"
+            android:layout_below="@+id/countZ"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/rbC3"
+            android:layout_alignTop="@+id/rbC4"
+            android:layout_toEndOf="@+id/rbC4"
+            android:layout_marginStart="34dp"
+            android:layout_margin="0dp"
+            android:layout_marginLeft="0dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/rbC2"
+            android:layout_alignTop="@+id/rbC3"
+            android:layout_centerHorizontal="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/rbC1"
+            android:layout_alignTop="@+id/rbC2"
+            android:layout_toStartOf="@+id/countZ" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/rbC0"
+            android:layout_alignTop="@+id/rbC1"
+            android:layout_alignParentEnd="true"
+            android:checked="true" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/buttonNextRound"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="comenzarRonda"
+        android:textColor="#fff"
+        android:background="@drawable/buton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:background="@drawable/repair"
+        android:layout_below="@+id/radioGroupB"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/radioGroupC"
+        android:layout_alignEnd="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/radioGroupZ"
+        android:layout_toStartOf="@+id/countB"
+        android:background="@drawable/barrac"
+        android:layout_above="@+id/radioGroupB" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="false"
+        android:layout_above="@+id/radioGroupZ"
+        android:background="@drawable/backyard"
+        android:layout_weight="100"
+        android:minHeight="200dp"
+        android:layout_toStartOf="@+id/countZ"
+        android:layout_alignEnd="@+id/imageView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="+1"
+        android:id="@+id/lblLvl"
+        android:layout_below="@+id/countZ"
+        android:layout_alignStart="@+id/countZ" />
+
+</RelativeLayout>
