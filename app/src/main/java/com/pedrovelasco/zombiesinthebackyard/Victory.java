@@ -1,6 +1,6 @@
 package com.pedrovelasco.zombiesinthebackyard;
 
-import android.os.Environment;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.VideoView;
@@ -14,7 +14,9 @@ public class Victory extends AppCompatActivity {
         VideoView videoView = (VideoView)findViewById(R.id.videoView);
 
 
-        videoView.setVideoPath("/sdcard/Librojuego.mp4");
+        Uri video = Uri.parse("android.resource://" + getPackageName() + "/"
+                + R.raw.fin);
+        videoView.setVideoURI(video);
 
         videoView.start();
 

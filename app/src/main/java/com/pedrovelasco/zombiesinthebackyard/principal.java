@@ -245,6 +245,8 @@ public class principal extends AppCompatActivity {
     public void rBarrac(){
         Log.d("general", "actualizacoion barracs(Comprobacion gameover)");
         // EN CASO DE QUE NO QUEDEN MAS BARRICADAS(FIN DE JUEGO)
+
+
         if(actBarrac <= 0){
 
             try {
@@ -305,7 +307,7 @@ public class principal extends AppCompatActivity {
 
     public void isvictori(){
         Log.d("general", "victoria");
-        if(actRepair <= 10){
+        if(actRepair >= 10){
             try {
                 Class<?>  clase = Class.forName("com.pedrovelasco.zombiesinthebackyard.Victory");
                 Intent victory = new Intent(this, clase);
@@ -314,12 +316,12 @@ public class principal extends AppCompatActivity {
                 e.printStackTrace();
             }
         }else{
-            TextView lblRepair = (TextView) findViewById(R.id.countC);
-            lblRepair.setText(String.valueOf(actRepair));
-
-
+            rBarrac();
 
         }
+        TextView lblRepair = (TextView) findViewById(R.id.countC);
+        lblRepair.setText(String.valueOf(actRepair));
+
     }
 
 
@@ -406,21 +408,18 @@ public class principal extends AppCompatActivity {
             if(zombieS && !BarriS && !RepairS && finishZ){
                 isvictori();
                 damageZombies();
-                rBarrac();
                 actZombiesRlvl();
                 statusReport();
             }
             if(!zombieS && BarriS && !RepairS && finishB){
                 isvictori();
                 damageZombies();
-                rBarrac();
                 actZombiesRlvl();
                 statusReport();
             }
             if(!zombieS && !BarriS && RepairS && finishR){
                 isvictori();
                 damageZombies();
-                rBarrac();
                 actZombiesRlvl();
                 statusReport();
             }
@@ -429,7 +428,6 @@ public class principal extends AppCompatActivity {
             if(zombieS && BarriS && !RepairS && finishZ && finishB && !finishR){
                 isvictori();
                 damageZombies();
-                rBarrac();
                 actZombiesRlvl();
                 statusReport();
             }
@@ -437,7 +435,6 @@ public class principal extends AppCompatActivity {
             if(zombieS && RepairS && !BarriS && finishZ && finishR && !finishB){
                 isvictori();
                 damageZombies();
-                rBarrac();
                 actZombiesRlvl();
                 statusReport();
             }
@@ -445,7 +442,7 @@ public class principal extends AppCompatActivity {
             if(BarriS && RepairS && !zombieS && finishB && finishR && !finishZ){
                 isvictori();
                 damageZombies();
-                rBarrac();
+
                 actZombiesRlvl();
                 statusReport();
             }
@@ -454,7 +451,7 @@ public class principal extends AppCompatActivity {
                && finishZ && finishB && finishR){
                 isvictori();
                 damageZombies();
-                rBarrac();
+
                 actZombiesRlvl();
                 statusReport();
 
